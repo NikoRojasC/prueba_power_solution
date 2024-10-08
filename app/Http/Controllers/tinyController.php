@@ -27,10 +27,6 @@ class tinyController extends Controller
     function short(Request $request)
     {
 
-        Log::debug('niko ----->');
-        Log::debug($request);
-        Log::debug('<----- niko');
-
         $request->validate([
             'url' => 'required|url'
         ]);
